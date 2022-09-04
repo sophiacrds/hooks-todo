@@ -13,7 +13,7 @@ export const GlobalStyle = createGlobalStyle`
   }
 
   :root{
-    --ff-title: 'DM Sans', sans-serif;
+    --ff-title: 'Readex Pro', sans-serif;
     --fs-ordinary: 1rem;
     --grape800: #A83279;
     --grape100: #a2678a38;
