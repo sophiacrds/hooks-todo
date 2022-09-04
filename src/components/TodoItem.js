@@ -1,6 +1,7 @@
 import React from "react";
 import * as S from "./TodoItemStyle";
 import edit from "../assets/edit.svg";
+import del from "../assets/delete.svg";
 
 export default function TodoItem(p) {
 	return (
@@ -11,7 +12,9 @@ export default function TodoItem(p) {
 				<p>{p.name}</p>
 			</S.Label>
 			<S.BtnBox>
-				<S.BtnItem onClick={p.toRemove}>X</S.BtnItem>
+				<S.BtnItem onClick={p.toRemove}>
+					<img src={del} alt="" />
+				</S.BtnItem>
 				<S.BtnItem onClick={p.toEdit}>
 					<img src={edit} alt="" />
 				</S.BtnItem>
