@@ -34,7 +34,6 @@ export const GlobalStyle = createGlobalStyle`
     align-items: flex-start;
     background-repeat: no-repeat;
     background-size: cover;
-    padding-top: 15%;
     height: 100vh;
     width: 100%;
     margin: 0;

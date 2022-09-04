@@ -3,7 +3,7 @@ import { Btn } from "./GlobalStyles";
 
 export const Container = styled.div`
 	width: 85%;
-	margin: auto;
+	margin: 15% auto 0;
 	background: white;
 	display: flex;
 	flex-direction: column;
