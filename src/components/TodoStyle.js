@@ -21,7 +21,7 @@ export const Container = styled.div`
 
 export const Title = styled.h1`
 	width: 100%;
-	padding: 5% 0;
+	padding: 1.2rem 0;
 	font-family: var(--ff-title);
 
 	@media (min-width: 600px) {
