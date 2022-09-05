@@ -9,13 +9,17 @@ export const Container = styled.div`
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	padding: 5% 5% 1%;
+	padding: 2.5rem 1rem 1rem;
 	border-radius: 20px 5px;
 	box-shadow: 6px 6px 5px 3px #0000003b;
 
 	@media (min-width: 450px) {
 		width: 70%;
 		max-width: 500px;
+		padding: 2.5rem 1.5rem 1rem;
+	}
+	@media (min-width: 600px) {
+		padding: 2.5rem 2rem 1rem;
 	}
 `;
 

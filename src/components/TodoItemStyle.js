@@ -43,7 +43,6 @@ export const Label = styled.label`
 	p {
 		font-size: var(--fs-ordinary);
 		width: calc(100% - 30px);
-		overflow: scroll;
 	}
 
 	${Input}:checked + & span {

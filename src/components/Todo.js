@@ -27,12 +27,19 @@ export default function Todo() {
 		const filteredList = tasklist.filter((i) => i.id !== id);
 		setTasklist(filteredList);
 		setTaskName(name);
+		document.querySelector("#entry").focus();
+		// a linha 30 é importante para que, depois de clicar em editar, ao pressionar o "enter" o item seja reinserido na tasklist
+		// do contrário, todos os itens subsequentes serão "editados"
 	};
 
 	useEffect(() => {
 		const btn = document.querySelector("#btnClear");
-		tasklist.length > 0 ? (btn.style.display = "block") : (btn.style.display = "none");
-	});
+		if (tasklist.length > 0) {
+			btn.style.display = "block";
+		} else {
+			btn.style.display = "none";
+		}
+	}, [tasklist]);
 
 	return (
 		<S.Container>
@@ -44,6 +51,7 @@ export default function Todo() {
 				}}
 			>
 				<S.Input
+					id="entry"
 					type="text"
 					value={taskName}
 					onChange={(e) => {
